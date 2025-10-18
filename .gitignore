@@ -1,0 +1,11 @@
+# Ignore PyCharm temp files
+.idea/
+*.pyc
+__pycache__/
+/.venv/*
+/.idea/*
+
+
+
+# Project exclude paths
+/models/
