@@ -12,7 +12,7 @@ This project predicts Bitcoin prices for the next 7 days using machine learning 
 - **App**: Streamlit web app with table and interactive Plotly chart (historical blue, predicted red dashed).
 
 ## Setup and Running
-1. Clone this repo: `git clone YOUR_GITHUB_LINK`.
+1. Clone this repo: `git clone YOUR_GITHUB_LINKhttps://github.com/ShahinMonta/Btc-Price-Prediction`.
 2. Install libraries: `pip install -r requirements.txt`.
 3. Train models (optional): Open `notebooks/bitcoin_model_training.ipynb` in Jupyter/PyCharm, run all cells to save model/scalers.
 4. Run the app: `streamlit run app/bitcoin_predictor_app.py`—opens in browser with predictions.
@@ -30,4 +30,4 @@ This project predicts Bitcoin prices for the next 7 days using machine learning 
 ## Learning Notes
 This project taught data handling, model tuning, evaluation, and deployment. Improvements: Add more features or retrain periodically.
 
-Built by Shahin Montazeri – LinkedIn/GitHub links.
+Built by Shahin Montazeri – https://github.com/ShahinMonta.
