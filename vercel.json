@@ -1,19 +1,9 @@
 {
-  "builds": [
-    {
-      "src": "app/bitcoin_predictor_app.py",
-      "use": "@vercel/python"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
     }
   ],
-  "installCommand": "pip install -r requirements.txt",  // This tells Vercel to run the install during build—sets up libraries like Streamlit and yfinance so 'pip not found' doesn't happen.
-  "buildCommand": "echo 'Build complete'",  // A dummy command for the build step (Vercel requires it, but we don't need extra build—'echo' just prints a message to logs).
-  "outputDirectory": ".",  // Sets the output to the root folder—ensures Vercel knows where your app is.
-  "framework": "other"  // Tells Vercel it's a custom app (not a standard framework)—helps it use the Python runtime correctly.
-}
+  "framework": "other"
 }
