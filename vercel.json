@@ -1,0 +1,14 @@
+{
+  "builds": [  // This starts an array (list) of build instructions—Vercel uses it to know how to prepare your app.
+    {  // Opens an object (like a dictionary) for one build type.
+      "src": "app/bitcoin_predictor_app.py",  // Tells Vercel the main source file is your app script (path from root)—this points to where the code lives.
+      "use": "@vercel/python"  // Specifies the runtime: "@vercel/python" installs Python (with pip) in the environment—fixes "pip not found" by adding Python tools.
+    }  // Closes the build object.
+  ],  // Closes the builds array.
+  "routes": [  // Starts an array for routing—tells Vercel how to handle web requests.
+    {  // Opens a route object.
+      "src": "/(.*)",  // Matches any URL path ("/(.*)" means everything after the domain)—catches all requests to your app.
+      "dest": "/"  // Sends all requests to the root (your app's main page)—ensures Streamlit handles everything.
+    }  // Closes the route.
+  ]  // Closes the routes array.
+}  // Closes the whole JSON object.
