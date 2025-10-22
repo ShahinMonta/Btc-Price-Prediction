@@ -1,7 +1,15 @@
 {
-  "framework": "vite",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install"
+  "version": 2,
+  "builds": [
+    {
+      "src": "bitcoin_predictor_app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "bitcoin_predictor_app.py"
+    }
+  ]
 }
